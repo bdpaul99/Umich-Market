@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--loginPage-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="loginPage" id="BYZ-38-t0r" customClass="ViewController" customModule="FirebaseSocialLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundblue.png" translatesAutoresizingMaskIntoConstraints="NO" id="9It-5y-CqE">
+                                <rect key="frame" x="0.0" y="243" width="320" height="325"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MarketPlace.png" translatesAutoresizingMaskIntoConstraints="NO" id="FfO-Ot-I73">
+                                <rect key="frame" x="0.0" y="49" width="320" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundblue.png" translatesAutoresizingMaskIntoConstraints="NO" id="snf-Mb-n5w">
+                                <rect key="frame" x="0.0" y="-1" width="320" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="ZFq-Vg-oOX" kind="show" identifier="switchToHome" id="qma-iZ-V1R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="98.239436619718305"/>
+        </scene>
+        <!--Messages-->
+        <scene sceneID="JBb-gY-2gt">
+            <objects>
+                <viewController id="gom-8g-ars" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iy8-Me-dXq"/>
+                        <viewControllerLayoutGuide type="bottom" id="OTH-9L-eiK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GId-Ve-Mh6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="messages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ci-oj-8Rq">
+                                <rect key="frame" x="109" y="231" width="118" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Messages" selectedImage="Speech Bubble-50.png" id="x5M-7z-xJe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hzw-Uw-ZDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2013.5999999999999" y="466.41679160419795"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="1KI-Np-PoP">
+            <objects>
+                <viewController id="ouy-eR-64o" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xgg-4k-I3Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ygn-HE-B9k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jzo-DT-ZYM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbf-kz-CwG">
+                                <rect key="frame" x="59" y="389" width="221" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" selectedImage="Home.png" id="FwC-V1-ufq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qn4-Vw-6Ve" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1984.8" y="-247.82608695652175"/>
+        </scene>
+        <!--homeView-->
+        <scene sceneID="QjP-x5-UdQ">
+            <objects>
+                <tabBarController storyboardIdentifier="homeView" title="homeView" id="ZFq-Vg-oOX" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="FRR-S2-zXL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ouy-eR-64o" kind="relationship" relationship="viewControllers" id="d4Z-6h-Qc4"/>
+                        <segue destination="gom-8g-ars" kind="relationship" relationship="viewControllers" id="HIO-Sc-uip"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eNM-65-GoQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1065" y="99"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Home.png" width="25" height="25"/>
+        <image name="MarketPlace.png" width="536" height="320"/>
+        <image name="Speech Bubble-50.png" width="25" height="25"/>
+        <image name="backgroundblue.png" width="146" height="77"/>
+    </resources>
+</document>
